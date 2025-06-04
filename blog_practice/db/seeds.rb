@@ -9,6 +9,7 @@
 #   end
 
 User.create(name: "Bob", email: "bob@example.com", password: "password", password_confirmation: "password")
+User.create(name: "Alice", email: "alice@example.com", password: "password", password_confirmation: "password")
 
 10.times do |x|
   Post.create(title: "title #{x}", body: "Body #{x} words go here", user_id: User.first.id)
